@@ -1,10 +1,12 @@
 import './App.css';
-import ClassComponent from "./daily-concept-wise/class.compoennt";
+// import ClassComponent from "./daily-concept-wise/class.compoennt";
+import ParentLists from "./daily-concept-wise/lists.and.keys";
 
 function App() {
   return (
-    <div className="App">
-      <ClassComponent />
+    <div>
+      {/* <ClassComponent /> */}
+      <ParentLists />
     </div>
   );
 }
