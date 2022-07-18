@@ -80,8 +80,7 @@ class SelectOptions extends Component {
                                 <td>{obj.body}</td>
                             </tr>
                         )
-                    })}
-
+                    })};
                  </table>
             </div>
         )
