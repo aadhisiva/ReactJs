@@ -39,18 +39,18 @@ class SelectOptions extends Component {
 
     render() {
         console.log("check ::", this.state.data);
-        const handleClick = () => {
-            this.setState((prev) => ({
-                ...prev,
-                selectvalue: 0
-            }));
-        }
-        const handleChange = (e) => {
-            this.setState((prev) => ({
-                ...prev,
-                selectvalue: e.target.value
-            }));
-        }
+        // const handleClick = () => {
+        //     this.setState((prev) => ({
+        //         ...prev,
+        //         selectvalue: 0
+        //     }));
+        // }
+        // const handleChange = (e) => {
+        //     this.setState((prev) => ({
+        //         ...prev,
+        //         selectvalue: e.target.value
+        //     }));
+        // }
         // console.log("e ::", this.state.selectvalue);
         return (
             <div>

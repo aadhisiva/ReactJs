@@ -1,5 +1,5 @@
 // import './App.css';
-import {BrowserRouter, HashRouter, Route, Routes, Router, Link} from "react-router-dom";
+import {BrowserRouter, Route, Routes, Link} from "react-router-dom";
 import ClassComponent from "./daily-concept-wise/class.compoennt";
 // import ParentLists from "./daily-concept-wise/lists.and.keys";4
 // import ControlledComponent from "./daily-concept-wise/form";
@@ -10,6 +10,7 @@ import FunctionalCompoennt from "./daily-concept-wise/functionalCompoent";
 import Todos from "./daily-concept-wise/useReducer";
 import Layout from "./Routers/layout";
 import NoFound from "./daily-concept-wise/nofound";
+import Users from "./users";
 
 function App() {
   return (
@@ -32,6 +33,9 @@ function App() {
           <li>
             <Link to="/select_options">Select Options</Link>
           </li>
+          <li>
+            <Link to="/users">Users</Link>
+          </li>
         </ul>
       </nav>
       <br/>
@@ -41,6 +45,7 @@ function App() {
           <Route path="todos" element={<Todos />} />
           <Route path="functional_coompoenent" element={<FunctionalCompoennt />} />
           <Route path="select_options" element={<SelectOptions />} />
+          <Route path="users" element={<Users />} />
           <Route path="*" element={<NoFound />} />
         </Routes>
       </BrowserRouter>
